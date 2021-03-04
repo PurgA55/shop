@@ -1,0 +1,165 @@
+:root {
+    --dark-blue: #222222;
+    --pink: #F1E4E6;
+    --dark_pink: #F16D7F;
+    --brown: #474040;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--dark-blue);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+}
+
+.header__navigation {
+    display: none;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+    margin: 0 34px 0 0;
+}
+
+.header__account {
+    margin: 0 33px 0 0;
+}
+
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+}
+
+.brand__title-wrapper {
+    padding: 0 0 0 92px;
+    background-color: var(--pink);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__subtitle {
+    display: block;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.brand__subtitle-pink {
+    color: var(--dark_pink);
+}
+
+.offers_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 97px 0;
+}
+
+.offers__item {
+    background-color: var(--brown);
+    height: 260px;
+    width: 360px;
+    margin: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.offers__item--women {
+    background-image: url(../img/women.jpg);
+}
+
+.offers__item--men {
+    background-image: url(../img/men.jpg);
+}
+
+.offers__item--kids {
+    background-image: url(../img/kids.jpg);
+}
+
+.offers__item--accesories {
+    background-image: url(../img/accesories.jpg);
+    width: 100%;
+    height: 180px;
+    margin: 0;
+}
+
+.offers__item__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.offers__item__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    color: var(--dark_pink);
+    text-transform: uppercase;
+}
+
+.fetured__title__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 57px 0;
+}
+
+.fetured__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fetured__product {
+    margin: 0 0 30px 0;
+}
